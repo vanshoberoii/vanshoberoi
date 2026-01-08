@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fdfbf7;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    padding: 100px 20px;
+}
+
+.hero-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+/* PHOTO */
+.hero-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-photo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* CONTENT */
+.hero-content {
+    flex: 2;
+}
+
+.hero-content h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.sub {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.links {
+    margin-bottom: 30px;
+}
+
+.links a {
+    color: #4da3ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* BUTTON */
+.btn {
+    background: #000;
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* SECTIONS */
+.section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* OFF-WHITE BACKGROUND */
+.section.light {
+    background: #fdfbf7;
+    padding: 80px 20px;
+}
+
+/* CARDS */
+.card {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    gap: 25px;
+}
+
+/* 4 ITEMS IN ONE LINE */
+.research-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* FORM */
+.form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input,
+.form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.form button {
+    background: #000;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .research-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
